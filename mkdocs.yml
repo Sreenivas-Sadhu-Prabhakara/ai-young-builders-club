@@ -1,0 +1,116 @@
+site_name: AI Young Builders Club
+site_description: A 4-weekend, hands-on AI literacy program for kids aged 11–13. Curriculum, facilitator guides, and reference materials.
+site_author: AI Young Builders Club
+site_url: https://sreenivas-sadhu-prabhakara.github.io/ai-young-builders-club/
+
+repo_name: ai-young-builders-club
+repo_url: https://github.com/Sreenivas-Sadhu-Prabhakara/ai-young-builders-club
+edit_uri: edit/main/docs/
+
+copyright: >
+  Made for curious kids. Free to use, adapt, and share under
+  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Nunito
+    code: Roboto Mono
+  icon:
+    logo: material/robot-happy
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - assets/css/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Sreenivas-Sadhu-Prabhakara/ai-young-builders-club
+
+nav:
+  - Home: index.md
+  - The Program:
+      - Overview & pitch: about.md
+  - Curriculum:
+      - Week 1 · What even is AI?:
+          - Overview: week-1/index.md
+          - Facilitator run-sheet: week-1/facilitator-guide.md
+          - Slides outline: week-1/slides.md
+          - Kid handout: week-1/handout.md
+      - Week 2 · Talking machines:
+          - Overview: week-2/index.md
+          - Facilitator run-sheet: week-2/facilitator-guide.md
+          - Slides outline: week-2/slides.md
+          - Kid handout: week-2/handout.md
+      - Week 3 · A taste of real code:
+          - Overview: week-3/index.md
+          - Facilitator run-sheet: week-3/facilitator-guide.md
+          - Slides outline: week-3/slides.md
+          - Kid handout: week-3/handout.md
+      - Week 4 · Smart & safe + Showcase:
+          - Overview: week-4/index.md
+          - Facilitator run-sheet: week-4/facilitator-guide.md
+          - Slides outline: week-4/slides.md
+          - Kid handout: week-4/handout.md
+  - Resources:
+      - Kid-friendly glossary: resources/glossary.md
+      - Prompting cheat sheet: resources/prompt-cheat-sheet.md
+      - AI ethics for kids: resources/ethics-primer.md
+      - Capstone code (Colab): resources/colab-notebook.md
+  - For Facilitators:
+      - Setup & accounts: for-facilitators/setup.md
+      - Safety, consent & parent letter: for-facilitators/safety.md
+      - FAQ & troubleshooting: for-facilitators/faq.md
+      - Capstone rubric: for-facilitators/rubric.md

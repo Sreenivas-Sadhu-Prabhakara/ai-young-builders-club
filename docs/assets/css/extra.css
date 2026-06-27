@@ -1,0 +1,99 @@
+/* AI Young Builders Club — light custom styling on top of Material */
+
+:root {
+  --abc-radius: 14px;
+}
+
+/* Friendly, rounded hero card used on the home page */
+.abc-hero {
+  border-radius: var(--abc-radius);
+  padding: 2.2rem 2rem;
+  margin: 0 0 2rem 0;
+  color: #fff;
+  background: linear-gradient(135deg, #6a4cff 0%, #9b5cff 45%, #ff8a3d 100%);
+  box-shadow: 0 10px 30px rgba(106, 76, 255, 0.25);
+}
+
+.abc-hero h1,
+.abc-hero h2,
+.abc-hero p {
+  color: #fff !important;
+  margin-top: 0;
+}
+
+.abc-hero .abc-tagline {
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+/* Card grid for the home page "4 weeks" overview */
+.abc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.abc-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: var(--abc-radius);
+  padding: 1.1rem 1.2rem;
+  background: var(--md-default-bg-color);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.abc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.abc-card h3 {
+  margin: 0.2rem 0 0.4rem 0;
+}
+
+.abc-card .abc-week-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+}
+
+/* "At a glance" chips */
+.abc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.abc-chip {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--md-primary-fg-color--light);
+  color: #fff;
+}
+
+/* Run-sheet time markers in facilitator guides */
+.md-typeset table.abc-runsheet td:first-child {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+
+/* Make printed handouts cleaner */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .abc-hero {
+    display: none !important;
+  }
+  .md-content {
+    margin: 0 !important;
+  }
+}
